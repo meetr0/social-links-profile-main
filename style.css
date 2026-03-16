@@ -16,7 +16,7 @@ body {
 
   .card {
     background-color: hsl(0, 0%, 12%);
-    padding: 24px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -29,7 +29,7 @@ body {
 
     .name {
       color: hsl(0, 0%, 100%);
-      font-size: 16px;
+      font-size: 22px;
       font-weight: 600;
       margin: 0;
       margin-bottom: 16px;
@@ -57,14 +57,14 @@ body {
       .link {
         background-color: hsl(0, 0%, 20%);
         text-decoration: none;
-        width: 279px;
+        width: 303px;
         color: hsl(0, 0%, 100%);
         padding: 14px 0px 14px 0px;
         border-radius: 5px;
         font-weight: 600;
         font-size: 14px;
       }
-      .link:hover{
+      .link:hover {
         background-color: hsl(75, 94%, 57%);
         color: hsl(0, 0%, 8%);
       }
@@ -78,5 +78,18 @@ body {
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (width <= 480px) {
+  body {
+    .card {
+      padding: 24px;
+      .links {
+        .link {
+          width: 277px;
+        }
+      }
+    }
   }
 }
